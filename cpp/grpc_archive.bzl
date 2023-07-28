@@ -36,7 +36,7 @@ grpc_archive = repository_rule(
         "strip_prefix": attr.string(),
         "type": attr.string(),
         "generate_cc_bzl": attr.label(
-            default = Label("@org_pubref_rules_protobuf//cpp:generate_cc.bzl", relative_to_caller_repository=True)
+            default = Label("@org_pubref_rules_protobuf//cpp:generate_cc.bzl")#, relative_to_caller_repository=True)
         ),
     },
 )
